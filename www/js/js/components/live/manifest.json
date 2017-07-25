@@ -1,0 +1,19 @@
+{
+  "name": "My Ionic App",
+  "short_name": "My Ionic App",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "icon.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "permissions": [
+    "audioCapture",
+    "videoCapture",
+    "storage",
+    "fullscreen",
+    "https://apprtc.appspot.com/",
+    "https://computeengineondemand.appspot.com/"
+  ]
+}

@@ -1,0 +1,35 @@
+﻿<ion-view title="Create a new account">
+<form name= "reg_form" novalidate>
+    <ion-content class="padding">
+        <div class="list">
+        <label class="item item-input">
+                <input type="text" placeholder="Enter Your Name" ng-model="user.name" name="password" ng-minlength="4" required="required">
+            </label>
+            <label class="item item-input">
+                <input floating type="email" name="username" placeholder="Email" ng-model="user.email">
+            </label>
+            <label class="item item-input">
+                <input type="date" placeholder="Your Date of Birth" ng-model="user.dob" name="dob" required="required">
+            </label>
+            <label class="item item-input">
+                <input type="password" placeholder="Password" ng-model="user.password" name="password" ng-minlength="6" required="required">
+            </label>
+            
+        </div>
+        <div class="padding">
+            <p ng-show="reg_form.name.$error.required">* Username is required</p>
+            <p ng-show="reg_form.dob.$error.required">* dob is required</p>
+            <p ng-show="reg_form.username.$error.required">* Email is required</p>
+            <p ng-show="reg_form.username.$invalid && !reg_form.username.$pristine">* Username must be an email address</p>
+            
+            <p ng-show="reg_form.username.$error.minlength">* Username must be longer than 5 characters</p>
+            <p ng-show="reg_form.password.$error.required">* Password is required</p>
+            <p ng-show="reg_form.password.$error.minlength">* Password must be longer than 6 characters</p>
+        </div>
+        <button class="button button-full button-positive" ng-click="signup()">
+            Sign up
+        </button>
+    </ion-content>
+
+    </form>
+</ion-view>

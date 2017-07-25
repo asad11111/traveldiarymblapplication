@@ -1,0 +1,10 @@
+{
+  "name": "travel",
+  "app_id": "",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://127.0.0.1:8100/api"
+    }
+  ]
+}

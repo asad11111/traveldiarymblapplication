@@ -1,0 +1,30 @@
+<ion-view>
+  <div class="bar bar-header bar-light">
+     <button ui-sref='share' class="button icon ion-arrow-left-c"></button>
+        <h1 class="title">Travel Diaries</h1>
+     <button class="button icon ion-home icon-right"></button>
+  </div>
+  <div class = "tabs tabs-icon-only" >
+   <a class = "tab-item" ui-sref='view'>
+      <i class = "icon ion-home"></i>
+   </a>
+  
+   <a class = "tab-item" ui-sref='share'>
+      <i class = "icon ion-camera"></i>
+   </a>
+  
+   <a class = "tab-item" ui-sref='friend'>
+      <i class = "icon ion-person" ></i>
+   </a>
+</div>
+  <br/><br/><br/>
+    <button class="button button-primary" ng-click="usersList()">Load Friends</button>
+    <ion-list>
+      <ion-item ng-repeat="user in users"> 
+          {{user.email}}
+      </ion-item>
+    </ion-list>
+    <button class="button button-primary" ng-click="addFriend()">Add Friend</button>
+    <button class="button button-assertive" ng-click="removeFriend()">Remove</button>
+ 
+</ion-view>

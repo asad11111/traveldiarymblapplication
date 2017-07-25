@@ -1,0 +1,98 @@
+{
+    "name": "travel",
+    "version": "1.1.1",
+    "description": "travel: An Ionic project",
+    "main": "server.js",
+    "private": true,
+    "dependencies": {
+        "@ionic-native/core": "^4.1.0",
+        "@ionic-native/file": "^4.0.1",
+        "bcryptjs": "^2.4.0",
+        "body-parser": "^1.16.0",
+        "bower": "^1.8.0",
+        "cloudinary": "^1.9.0",
+        "connect-multiparty": "^2.0.0",
+        "cordova-android": "^6.2.3",
+        "cordova-browser": "^4.1.0",
+        "cordova-ios": "^4.4.0",
+        "cordova-plugin-actionsheet": "^2.3.3",
+        "cordova-plugin-camera": "~2.3.1",
+        "cordova-plugin-compat": "~1.1.0",
+        "cordova-plugin-console": "^1.0.7",
+        "cordova-plugin-contacts": "~2.3.0",
+        "cordova-plugin-device": "~1.1.4",
+        "cordova-plugin-file": "~4.3.1",
+        "cordova-plugin-file-transfer": "^1.6.3",
+        "cordova-plugin-geolocation": "~2.4.2",
+        "cordova-plugin-imagepicker": "~1.1.0",
+        "cordova-plugin-media-capture": "~1.4.1",
+        "cordova-plugin-splashscreen": "~4.0.1",
+        "cordova-plugin-statusbar": "~2.2.1",
+        "cordova-plugin-whitelist": "~1.3.1",
+        "cors": "^2.8.4",
+        "express": "^4.14.1",
+        "git": "^0.1.5",
+        "gulp": "^3.5.6",
+        "gulp-concat": "^2.2.0",
+        "gulp-minify-css": "^0.3.0",
+        "gulp-rename": "^1.2.0",
+        "gulp-sass": "^2.0.4",
+        "heroku": "^0.2.0",
+        "heroku-cli": "^6.12.17",
+        "ionic": "^1.7.16",
+        "ionic-cli": "0.0.0",
+        "ionic-plugin-keyboard": "~2.2.1",
+        "javascript-to-typescript": "^1.0.2",
+        "jwt-simple": "^0.5.1",
+        "mongoose": "^4.8.1",
+        "morgan": "^1.7.0",
+        "ng-file-upload": "^12.2.13",
+        "node-sass": "^4.5.3",
+        "passport": "^0.3.2",
+        "passport-jwt": "^2.2.1",
+        "rxjs": "^5.0.1",
+        "socket.io": "^2.0.3",
+        "twilio": "^3.5.0"
+    },
+    "devDependencies": {
+        "bower": "^1.3.3",
+        "gulp-util": "^2.2.14",
+        "shelljs": "^0.3.0"
+    },
+    "cordovaPlugins": [
+        "cordova-plugin-whitelist",
+        "cordova-plugin-console",
+        "cordova-plugin-statusbar",
+        "cordova-plugin-device",
+        "cordova-plugin-splashscreen",
+        "ionic-plugin-keyboard"
+    ],
+    "cordovaPlatforms": [],
+    "cordova": {
+        "platforms": [
+            "browser"
+        ],
+        "plugins": {
+            "cordova-plugin-file-transfer": {},
+            "cordova-plugin-camera": {
+                "CAMERA_USAGE_DESCRIPTION": " ",
+                "PHOTOLIBRARY_USAGE_DESCRIPTION": " "
+            },
+            "cordova-plugin-compat": {},
+            "cordova-plugin-console": {},
+            "cordova-plugin-contacts": {},
+            "cordova-plugin-device": {},
+            "cordova-plugin-file": {},
+            "cordova-plugin-geolocation": {
+                "GEOLOCATION_USAGE_DESCRIPTION": " "
+            },
+            "cordova-plugin-media-capture": {},
+            "cordova-plugin-splashscreen": {},
+            "cordova-plugin-statusbar": {},
+            "cordova-plugin-whitelist": {},
+            "ionic-plugin-keyboard": {},
+            "cordova-plugin-imagepicker": {},
+            "cordova-plugin-actionsheet": {}
+        }
+    }
+}

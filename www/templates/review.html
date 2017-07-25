@@ -1,0 +1,30 @@
+<ion-view>
+  <div class="bar bar-header bar-light">
+     <button ui-sref='share' class="button icon ion-arrow-left-c"></button>
+        <h1 class="title">Travel Diaries</h1>
+     <button class="button icon ion-home icon-right"></button>
+  </div>
+  <br/><br/><br/>
+  <div class = "tabs tabs-icon-only" >
+   <a class = "tab-item" ui-sref='view'>
+      <i class = "icon ion-home"></i>
+   </a>
+  
+   <a class = "tab-item" ui-sref='share'>
+      <i class = "icon ion-camera"></i>
+   </a>
+  
+   <a class = "tab-item" ui-sref='friend'>
+      <i class = "icon ion-person" ></i>
+   </a>
+</div>
+    	<textarea ng-model="Reviews.description" class="form-control" rows="3"></textarea>
+      <input ng-model="Reviews.rate" class="form-control"></input>
+       <div rating
+         ng-model="Reviews.rate"
+         max="5">
+           
+         </div>
+      <br/><br/><br/>
+    <button class="button button-assertive" ng-click="addingReview()">Add Review</button>
+</ion-view>

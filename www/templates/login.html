@@ -1,0 +1,19 @@
+﻿<ion-view style="background-color: white">
+    <ion-content>
+     <div class="list"">
+            <label class="item item-input" style="background-color: inherit;">
+                <h1 style="font-size: 48px; font-family: 'Open Sans', sans-serif; margin-top: 30px; margin-left: 100px;   margin-bottom: 20px;">Log In</h1>
+            </label>
+            <label class="item item-input"  style="background-color: inherit;">
+                <input type="text" placeholder="Your Email Address" ng-model="user.email">
+            </label>
+            <label class="item item-input" style="background-color: inherit;">
+                <input type="password" placeholder="Password" ng-model="user.password">
+            </label>
+        </div>
+        <button class="button button-full button-balanced" ng-click="login()">
+            Login
+        </button>
+        <button class="button button-positive button-clear button-full" ui-sref="outside.register">Register now!</button>
+    </ion-content>
+</ion-view>

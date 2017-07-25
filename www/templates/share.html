@@ -1,0 +1,36 @@
+<ion-view>
+  <div class="bar bar-header bar-light">
+     <button ui-sref='nav' class="button icon ion-arrow-left-c"></button>
+        <h1 class="title">Travel Diaries</h1>
+     <button class="button icon ion-home icon-right"></button>
+  </div>
+  <br/><br/><br/>
+  <div class = "tabs tabs-icon-only" >
+   <a class = "tab-item" ui-sref='view'>
+      <i class = "icon ion-home"></i>
+   </a>
+  
+   <a class = "tab-item" ui-sref='share'>
+      <i class = "icon ion-camera"></i>
+   </a>
+  
+   <a class = "tab-item" ui-sref='friend'>
+      <i class = "icon ion-person" ></i>
+   </a>
+</div>
+    	<textarea ng-model="description" class="form-control" rows="3"></textarea>
+      <button class="button button-balanced button-outline icon icon-left ion-image" ng-click="openFilePicker()"> 
+          Take Photo 
+      </button>
+
+    	<button ui-sref='live' class="button button-assertive button-outline icon icon-left ion-disc">
+          Go Live
+      </button>
+      <button ui-sref='review' class="button button-calm button-outline icon icon-left ion-star">
+          Reviews
+      </button>
+	</div>
+	<br/><br/>
+  <button class="button button-calm button-outline" ng-click="uploadPhoto()" style="text-align: right;">Post</button>
+
+</ion-view>
