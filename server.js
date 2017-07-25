@@ -29,14 +29,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(passport.initialize());
 var server = require('http').createServer(handler)
 //mongoose connection
-if(env=='development')
-{
+//if(env=='development')
+//{
 mongoose.connect('mongodb://localhost/traveldb');
-}
-else{
-mongoose.connect('mongodb://asad:maidaaaa1@ds161162.mlab.com:61162/heroku_54txt9cj');
-}
-var env=process.env.NODE_ENV=process.env.NODE_ENV||'development';
+//}
+//else{
+//mongoose.connect('mongodb://asad:maidaaaa1@ds161162.mlab.com:61162/heroku_54txt9cj');
+//}
+//var env=process.env.NODE_ENV=process.env.NODE_ENV||'development';
 
 //passport Configuration
 var io = require('socket.io')(server);
