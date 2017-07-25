@@ -2,8 +2,10 @@
     "name": "travel",
     "version": "1.1.1",
     "description": "travel: An Ionic project",
-    "main": "server.js",
-    "private": true,
+	 "private": true,
+	 "scripts": {
+        "start": "node server.js"
+    },
     "dependencies": {
         "@ionic-native/core": "^4.1.0",
         "@ionic-native/file": "^4.0.1",
